@@ -8,6 +8,7 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+          
         }
       },
       "root": "",
@@ -29,6 +30,7 @@
             ],
             "styles": [
               "src/styles.scss"
+              
             ],
             "scripts": []
           },
