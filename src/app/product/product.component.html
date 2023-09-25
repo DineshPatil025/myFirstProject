@@ -1,0 +1,85 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-3">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    product list using string interpolation {{pName}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+   <div class="listItem py-4 mb-4">
+       <h4 class="bg-warning text-dark text-capitalize py-2">product list using string interpolation</h4>
+    <div class="row">
+        <div class="col-12">
+            <ul class="list-group">
+                <li *ngFor="let product of products; index as i" class="list-group-item text-capitalize">
+                    {{i+1}} : <strong>{{product}}</strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+   </div>
+
+    <div class="stdDet py-4 mb-4">
+        <h4 class="bg-warning text-dark py-2 text-capitalize">student list using string interpolation</h4>
+        <div class="row text-capitalize">
+            <div class="col-12">
+                <table class="table table-bordered ">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>sl no</th>
+                            <th>student name</th>
+                            <th>class</th>
+                            <th>age</th>
+                            <th>contact</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-striped">
+                        <tr *ngFor="let student of students; index as i">
+                            <td>{{i + 1}}</td>
+                            <td>{{student.stdName}}</td>
+                            <td>{{student.stdClass}}</td>
+                            <td>{{student.stdAge}}</td>
+                            <td>{{student.stdContact}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="empdeptDet py-4 mb-4">
+        <h4 class="bg-warning text-dark py-2 text-capitalize">employee details table string interpolation</h4>
+        <div class="row text-capitalize">
+            <div class="col-12">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>sl no</th>
+                            <th>name</th>
+                            <th>department</th>
+                            <th>email</th>
+                            <th>contact</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-striped">
+                        <tr *ngFor=" let emp of empDetails; index as i">
+                            <td>{{i +1}}</td>
+                            <td>{{emp.empName}}</td>
+                            <td>{{emp.empDept}}</td>
+                            <td>{{emp.empEmail}}</td>
+                            <td>{{emp.empContact}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

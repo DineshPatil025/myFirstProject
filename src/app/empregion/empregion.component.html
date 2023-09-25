@@ -1,0 +1,25 @@
+<div class="container py-4">
+    <h4 class="bg-warning text-dark py-2 text-capitalize">employe region details created new component </h4>
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th *ngFor="let column of empregionheaders">
+                            {{column}}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let emp of empregionrows">
+                        <td>{{emp.ID}}</td>
+                        <td>{{emp.Name}}</td>
+                        <td>{{emp.Age}}</td>
+                        <td>{{emp.Gender}}</td>
+                        <td>{{emp.Country}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
